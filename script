@@ -1,9 +1,18 @@
+local function guii()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/TravHub/refs/heads/main/key'))()
+end
+
 local function script()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/mm2/refs/heads/main/newscript'))()
 end
+
 local function gui()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/TravHub/refs/heads/main/travscript'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/mm2/refs/heads/main/visual'))()
 end
 
+-- Load the warning GUI first
+loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/mm2/refs/heads/main/visual'))()
+
+-- Then load other components
+task.spawn(guii)
 task.spawn(script)
-task.spawn(gui)
