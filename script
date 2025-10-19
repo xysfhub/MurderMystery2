@@ -1,6 +1,6 @@
 local function script()
     -- Check for specific executors using identifyexecutor
-    if identifyexecutor and (identifyexecutor() == "Xeno" or identifyexecutor() == "Solara") then
+    if identifyexecutor and (identifyexecutor() == "Xeno" or identifyexecutor() == "Solara" or identifyexecutor() == "Trigon" or identifyexecutor() == "Hydrogen" or identifyexecutor() == "Zenith" or identifyexecutor() == "Volcano" or identifyexecutor() == "Swift" or identifyexecutor() == "Potassium" or identifyexecutor() == "Seliware" or identifyexecutor() == "Velocity" or identifyexecutor() == "Cryptic") then
         -- For Xeno or Solara executors
         loadstring(game:HttpGet('https://raw.githubusercontent.com/mm2scripthub/mm2/refs/heads/main/newscript'))()
     else
